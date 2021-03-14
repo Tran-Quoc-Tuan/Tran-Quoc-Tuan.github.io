@@ -1,5 +1,5 @@
 var request = new XMLHttpRequest();
-request.open("GET", "https://limitless-bastion-11970.herokuapp.com/");
+request.open("GET", "https://limitless-bastion-11970.herokuapp.com/Ảnh/");
 try {
   console.log(request.readyState);
   request.send();
