@@ -103,6 +103,7 @@ ul {
 
 li {
     position: static;
+    width: 100%;
     min-width: 30px;
     height: 100%;
     list-style: none;
