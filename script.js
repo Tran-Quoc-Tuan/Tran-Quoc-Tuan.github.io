@@ -20,6 +20,9 @@ header.onmouseout = menu.onmouseout = function() {
 }
 
 function guess_audio() {
+        abc.style.top = "-100px";
+        abc.style.visibility = "hidden";
+        abc.style.opacity = "0";
 	notify.style.display = "none";
 }
 
