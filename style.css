@@ -103,7 +103,7 @@ ul {
 
 li {
     position: static;
-    min-width: 100px;
+    min-width: 30px;
     height: 100%;
     list-style: none;
     place-items: center;
