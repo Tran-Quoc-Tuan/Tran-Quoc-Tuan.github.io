@@ -24,6 +24,7 @@ function guess_audio() {
         abc.style.visibility = "hidden";
         abc.style.opacity = "0";
 	notify.style.display = "none";
+	document.getElementById("background").requestFullscreen();
 }
 
 document.getElementsByClassName("button")[0].onclick = function() {
@@ -60,7 +61,6 @@ window.onload = function() {
 	abc.style.bottom = "0px";
 	abc.style.visibility = "visible";
 	abc.style.opacity = "1";
-	document.getElementById("background").requestFullscreen();
 }
 
 var header = document.getElementsByTagName("header")[0];
