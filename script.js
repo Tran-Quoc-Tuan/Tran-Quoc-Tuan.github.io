@@ -60,6 +60,7 @@ window.onload = function() {
 	abc.style.bottom = "0px";
 	abc.style.visibility = "visible";
 	abc.style.opacity = "1";
+	document.getElementById("background").requestFullscreen();
 }
 
 var header = document.getElementsByTagName("header")[0];
