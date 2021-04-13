@@ -20,13 +20,17 @@ header.onmouseout = menu.onmouseout = function() {
 }
 
 function guess_audio() {
+        abc.style.top = "-100px";
+        abc.style.visibility = "hidden";
+        abc.style.opacity = "0";
 	notify.style.display = "none";
+	document.getElementById("background").requestFullscreen();
 }
 
 document.getElementsByClassName("button")[0].onclick = function() {
 	guess_audio();
 	var audio = new Audio();
-	audio.src = "https://tran-quoc-tuan.github.io/3684004552778207155.mp3";
+	audio.src = "http://planetarian-project.com/mp3/bgm.mp3";
 	audio.play();
 	audio.loop = true;
 }
