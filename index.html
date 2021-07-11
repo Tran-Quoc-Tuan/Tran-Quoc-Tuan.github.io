@@ -55,7 +55,7 @@
         }
     </style>
 </head>
-<body style="background: red">
+<body>
 <div id="time-update" class="content-center text-upper"></div>
 <div id="infor" class="content-center text-upper">
     <div id="confirmed-case" class="text-center"></div>
@@ -78,7 +78,7 @@ re.onload = function () {
     update.innerHTML = data.time_refresh;
     confirm.innerHTML = 'Confirmed cases <br>' + data.confirmed_cases;
     death.innerHTML = 'Deaths <br>' + data.deaths;
-    vaccine.innerHTML = 'At ' + data.vaccine_time_refresh + data.vaccine_doses + ' vaccine doses';
+    vaccine.innerHTML = 'At ' + data.vaccine_time_refresh + ' ' + data.vaccine_doses + ' vaccine doses';
 }
 </script>
 </html>
