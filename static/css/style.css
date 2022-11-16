@@ -1,0 +1,45 @@
+.main-header a {
+    font-size: 0.9rem !important;
+    font-weight: 700;
+}
+.nav-item.d-none a {
+    color: rgb(0, 0, 0, 0.2) !important;
+}
+.nav-item.d-none.nav-item-active a {
+    color: #28a745 !important;
+}
+.content {
+    position: relative;
+}
+.notify {
+    top: 40%;
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    margin: auto;
+}
+.info-box {
+    text-align: center;
+}
+.carousel-item img {
+    width: auto;
+    height: auto;
+}
+.carousel-item .post {
+    height: 200px;
+    overflow: hidden;
+    margin: 0 10%;
+}
+#metadata th {
+    width: 500px;
+}
+#metadata img {
+    max-width: 100%;
+    height: auto;
+}
+#content {
+    transition: 0.5s;
+}
+.user-name {
+    font-size: 2rem;
+}
