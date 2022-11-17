@@ -206,7 +206,7 @@
                                 sớm nhất
                             </p>
                         </blockquote>
-                        <form method="post" action="http://127.0.0.1:5000/read-metadata-audio" class="dropzone" id="drop-audio-file"
+                        <form method="post" action="http://tqt-website.herokuapp.com/read-metadata-audio" class="dropzone" id="drop-audio-file"
                             enctype="multipart/form-data">
                             <div class="dz-message" data-dz-message>Thả file tại đây</div>
                             <!-- <div class="fas fa-trash text-danger" data-dz-remove></div> -->
@@ -544,7 +544,7 @@
             form.append('file', fileHandling);
             $.ajax({
                 method: 'POST',
-                url: 'http://127.0.0.1:5000/api/edit-metadata-audio',
+                url: 'http://tqt-website.herokuapp.com/api/edit-metadata-audio',
                 data: form,
                 contentType: false,
                 processData: false,

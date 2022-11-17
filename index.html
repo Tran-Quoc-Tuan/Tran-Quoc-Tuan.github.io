@@ -318,7 +318,7 @@
 
     <script>
     (function initialzePage() {
-        $.get('http://127.0.0.1:5000/api', (res) => {
+        $.get('http://tqt-website.herokuapp.com/api', (res) => {
             setCarouselVibloNewest(res.newest);
             setCarouselVibloTrending(res.trending);
         })

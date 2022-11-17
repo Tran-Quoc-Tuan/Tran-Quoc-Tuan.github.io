@@ -230,7 +230,7 @@
         };
 
         (function initializePage() {
-            $.get('http://127.0.0.1:5000/api/my-github', (res) => {
+            $.get('http://tqt-website.herokuapp.com/api/my-github', (res) => {
                 console.log(res);
                 $('.content .container-fluid').append(
                     generalUserInfo(res.owner),
