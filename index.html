@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <title>Trang chủ</title>
 
     <!-- Custom style -->
@@ -259,14 +260,17 @@
             $.get('http://vnquoctuan.pythonanywhere.com/api', (res) => {
                 setibloNewestCard(res.newest);
                 setVibloTrendingCard(res.trending);
-                setCarouselVibloTrending(res.trending);
             })
                 .fail((res) => {
+                    var title;
+
                     console.log(res);
+
+                    if (res.status == 500) {title = 'Không thể kết nối đến server.';}
 
                     Swal.fire({
                         icon: 'error',
-                        title: 'Xuất hiện lỗi không xác định.'
+                        title: title
                     });
                 })
         })()
