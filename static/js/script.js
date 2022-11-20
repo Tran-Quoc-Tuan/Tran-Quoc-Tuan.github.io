@@ -116,7 +116,7 @@ const samplePosts = {
         }]
 };
 
-const sampleBackground = [
+const SAMPLE_BACKGROUND = [
     "image/20220911.jpg",
     "image/20220912.jpg",
     "image/20220913.jpg",
